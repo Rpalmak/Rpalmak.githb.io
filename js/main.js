@@ -68,14 +68,16 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
+    // certificados isotope and filter
+    var certificadosIsotope = $('.certificados-container').isotope({
+        itemSelector: '.certificados-item',
+        layoutMode: 'fitRows'
+    });
+    $('#certificados-flters li').on('click', function () {
+        $("#certificados-flters li").removeClass('active');
+        $(this).addClass('active');
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        dots: true,
-        loop: true,
-        items: 1
+        certificadosIsotope.isotope({filter: $(this).data('filter')});
     });
     
     
