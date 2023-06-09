@@ -389,3 +389,49 @@
   }
 }
 
+
+
+.skill {
+  background-color: #314355;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.py-5 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.wow {
+  visibility: hidden;
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
