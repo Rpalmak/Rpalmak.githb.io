@@ -96,3 +96,17 @@
     });
 })(jQuery);
 
+
+const toggleContainer = document.querySelector('.toggle-container');
+
+toggleContainer.addEventListener('click', function() {
+  this.parentNode.classList.toggle('active');
+});
+
+
+
+
+
+
+
+
