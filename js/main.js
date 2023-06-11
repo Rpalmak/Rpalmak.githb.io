@@ -61,17 +61,36 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
-    // certificados isotope and filter
-    var certificadosIsotope = $('.certificados-container').isotope({
-        itemSelector: '.certificados-item',
-        layoutMode: 'fitRows'
-    });
-    $('#certificados-flters li').on('click', function () {
-        $("#certificados-flters li").removeClass('active');
-        $(this).addClass('active');
+      
+      
+      
+      
+    $(document).ready(function () {
+        // Filtrar las imágenes al hacer clic en los botones de categoría
+        $('#categoria-filters li').on('click', function () {
+          var categoria = $(this).data('filter');
+          $('.container .col-md-4').hide(); // Ocultar todas las imágenes
+          $('.container ' + categoria).fadeIn(); // Mostrar las imágenes de la categoría seleccionada
+      
+          // Activar/desactivar la selección de los botones
+          $('#categoria-filters li').removeClass('active');
+          $(this).addClass('active');
+        });
+      
+        // Activar el primer botón de categoría por defecto
+        $('#categoria-filters li').first().click();
+      });
+      
 
-        certificadosIsotope.isotope({filter: $(this).data('filter')});
-    });
+
+
+
+
+
+
+
+
+
 
     
     
