@@ -112,7 +112,7 @@
       var newLang = currentLang === 'es' ? 'en' : 'es';
   
       document.documentElement.lang = newLang;
-  
+   
       // Actualizar los textos según el idioma seleccionado
       if (newLang === 'es') {
         document.getElementById('descargarCV').textContent = 'Descargar CV';
