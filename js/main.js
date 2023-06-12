@@ -108,18 +108,31 @@
     }); 
    
     function changeLanguage() {
-      var currentLang = document.documentElement.lang;
-      var newLang = currentLang === 'es' ? 'en' : 'es';
-  
-      document.documentElement.lang = newLang;
-   
-      // Actualizar los textos según el idioma seleccionado
-      if (newLang === 'es') {
-        document.getElementById('descargarCV').textContent = 'Descargar CV';
-      } else {
-        document.getElementById('descargarCV').textContent = 'Download CV';
+        var currentLang = document.documentElement.lang;
+        var newLang = currentLang === 'es' ? 'en' : 'es';
+      
+        document.documentElement.lang = newLang;
+      
+        // Cargar las traducciones desde el archivo JSON o de texto
+        var translationsURL = 'lib/translate/translations.json'; // Reemplaza con la URL correcta
+        fetch(translationsURL)
+          .then(function(response) {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error('Error al cargar las traducciones');
+            }
+          })
+          .then(function(translations) {
+            // Actualizar los textos según el idioma seleccionado
+            var downloadCVText = translations[newLang].downloadCV;
+            document.getElementById('descargarCV').textContent = downloadCVText;
+          })
+          .catch(function(error) {
+            console.error(error);
+          });
       }
-    }
+      
    
     // Establecer el idioma inicial
     document.documentElement.lang = 'es';
