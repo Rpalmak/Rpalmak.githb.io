@@ -90,6 +90,23 @@
 
 
 
+      const toggleContainer = document.querySelector('.toggle-container');
+const flagIcons = toggleContainer.querySelectorAll('.flag-icon');
+
+toggleContainer.addEventListener('click', function () {
+  flagIcons.forEach(function (flagIcon) {
+    flagIcon.classList.toggle('active');
+  });
+});
+
+
+
+
+
+
+
+
+
 
 
     
