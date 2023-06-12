@@ -120,7 +120,7 @@
         document.getElementById('descargarCV').textContent = 'Download CV';
       }
     }
-  
+   
     // Establecer el idioma inicial
     document.documentElement.lang = 'es';
   
