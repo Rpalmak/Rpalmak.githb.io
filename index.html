@@ -45,7 +45,19 @@
 <body>
     <div class="container">
         <div class="row g-5">
-            <div class="col-lg-4 sticky-lg-top vh-100">
+            <!--header-->
+            <header class="d-flex justify-content-end mb-3 pt-3">
+            <div class="language-switch">
+                <div class="toggle-container">
+                    <img class="flag-icon active" src="/img/spanish.png" alt="Español" />
+                    <img class="flag-icon" src="/img/english.png" alt="English" />
+                    <div class="toggle-circle"></div>
+                    <div class="reflection"></div>
+                </div>
+            </div>
+            </header>
+            <!--header-->
+            <div class="col-lg-4 sticky-lg-top vh-100 mt-0">
                 <div class="d-flex flex-column h-100 text-center shadow">
                     <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Image" />
                     <h1 class="text-primary mt-2">Raúl Palma</h1>
@@ -65,58 +77,56 @@
                             href="https://www.facebook.com/rpalmak/"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-secondary btn-square mx-1" target="_blank"
                             href="https://www.instagram.com/rpalmak/"><i class="fab fa-instagram"></i></a>
-                        <div class="language-switch">
-                            <div class="toggle-container">
-                                <img class="flag-icon active" src="/img/spanish.png" alt="Español" />
-                                <img class="flag-icon" src="/img/english.png" alt="English" />
-                                <div class="toggle-circle"></div>
-                            </div>
-                        </div>
+                            
                     </div>
                     
-                    
+                   
+
+
                     <div class="d-flex align-items-end justify-content-between border-top">
                         <a href="https://drive.google.com/uc?export=download&id=1zyyqX3nj0wX1InvG74JvKt0V9UaeFmiL"
                             class="btn w-100 border-end bg-success pb-4 pt-4">Descargar CV</a>
                     </div>
                 </div>
             </div>
-
             
-            <div class="col-lg-8">
+
+
+            <div class="col-lg-8 mt-0">
                 <!-- Navbar Start -->
                 <nav class="navbar navbar-expand-xl navbar-expand-lg bg-secondary sticky-top">
                     <div class="container">
-                      <a class="navbar-brand" href="#portfolio-section">Portafolio</a>
-                      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto align-items-center">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#about-section">Acerca de mi</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#skills-section">Habilidades</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#experience-section">Experiencia</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#formacion-section">Formación</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#certificados-section">Certificados</a>
-                          </li>
-                        </ul>
-                      </div>
+                        <a class="navbar-brand" href="#portfolio-section">Portafolio</a>
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about-section">Acerca de mi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#skills-section">Habilidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experience-section">Experiencia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#formacion-section">Formación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#certificados-section">Certificados</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </nav>
+                </nav>
 
-                  
-                  
-                  
+
+
+
 
                 <!-- Navbar End -->
                 <section class="py-5 border-bottom wow fadeInUp" id="about-section" data-wow-delay="0.1s">
@@ -263,7 +273,7 @@
                         <div class="position-relative mb-4">
                             <span class="bi bi-arrow-right fs-4 text-light position-absolute"
                                 style="top: -5px; left: -50px"></span>
-                            <h5 class="mb-1">Desarrollador Fiori Junior</h5>
+                            <h5 class="mb-1">Desarrollador Fiori</h5>
                             <p class="mb-2">KSE | <small>2022 - Presente</small></p>
                             <ul>
                                 <li>
@@ -554,8 +564,7 @@
                             <div class="col-md-4 portfolio-item second mb-4">
                                 <a href="img/portafolio/ipsenjohnsen.png" data-lightbox="second"
                                     title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/ipsenjohnsen.png"
+                                    <img class="d-block w-100 zoomable" src="img/portafolio/ipsenjohnsen.png"
                                         alt="Certificado de SAP Fiori Developer">
                                     <div class="zoom-overlay">
                                         <i class="fas fa-search-plus"></i>
@@ -568,8 +577,7 @@
                             <div class="col-md-4 portfolio-item third mb-4">
                                 <a href="img/portafolio/thornpixelshop.com.png" data-lightbox="third"
                                     title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/thornpixelshop.com.png"
+                                    <img class="d-block w-100 zoomable" src="img/portafolio/thornpixelshop.com.png"
                                         alt="Certificado de SAP Fiori Developer">
                                     <div class="zoom-overlay">
                                         <i class="fas fa-search-plus"></i>
@@ -607,8 +615,7 @@
                             <div class="col-md-4 portfolio-item fifth mb-4">
                                 <a href="img/portafolio/Tesis-categorias.png" data-lightbox="fifth"
                                     title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/Tesis-categorias.png"
+                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-categorias.png"
                                         alt="Certificado de SAP Fiori Developer">
                                     <div class="zoom-overlay">
                                         <i class="fas fa-search-plus"></i>
@@ -618,8 +625,7 @@
                             <div class="col-md-4 portfolio-item fifth mb-4">
                                 <a href="img/portafolio/Tesis-compras.png" data-lightbox="fifth"
                                     title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/Tesis-compras.png"
+                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-compras.png"
                                         alt="Certificado de SAP Fiori Developer">
                                     <div class="zoom-overlay">
                                         <i class="fas fa-search-plus"></i>
@@ -629,8 +635,7 @@
                             <div class="col-md-4 portfolio-item fifth mb-4">
                                 <a href="img/portafolio/Tesis-info.png" data-lightbox="fifth"
                                     title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/Tesis-info.png"
+                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-info.png"
                                         alt="Certificado de SAP Fiori Developer">
                                     <div class="zoom-overlay">
                                         <i class="fas fa-search-plus"></i>
@@ -640,8 +645,7 @@
                             <div class="col-md-4 portfolio-item fifth mb-4">
                                 <a href="img/portafolio/Tesis-sesiones.png" data-lightbox="fifth"
                                     title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/Tesis-sesiones.png"
+                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-sesiones.png"
                                         alt="Certificado de SAP Fiori Developer">
                                     <div class="zoom-overlay">
                                         <i class="fas fa-search-plus"></i>
@@ -651,8 +655,7 @@
                             <div class="col-md-4 portfolio-item fifth mb-4">
                                 <a href="img/portafolio/Tesis-stock.png" data-lightbox="fifth"
                                     title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/Tesis-stock.png"
+                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-stock.png"
                                         alt="Certificado de SAP Fiori Developer">
                                     <div class="zoom-overlay">
                                         <i class="fas fa-search-plus"></i>

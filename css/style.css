@@ -258,8 +258,9 @@
 }
 
 .language-switch {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  position: relative;
 }
 
 .toggle-container {
@@ -284,14 +285,25 @@
 .flag-icon:first-child {
   left: 0;
   opacity: 1;
-  z-index: 1; /* Agregamos una propiedad z-index para asegurar que la bandera esté por encima del círculo blanco */
+  z-index: 1;
 }
 
 .flag-icon:last-child {
   right: 0;
   opacity: 0;
-  z-index: 0; /* Agregamos una propiedad z-index para asegurar que la bandera esté por debajo del círculo blanco */
+  z-index: 0;
 }
+.reflection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+  opacity: 0.6;
+  z-index: 1;
+}
+
 
 .language-switch.active .flag-icon:first-child {
   z-index: 1;
@@ -323,6 +335,7 @@
 .language-switch.active .toggle-circle {
   transform: translateX(34px);
 }
+
 
 
 
