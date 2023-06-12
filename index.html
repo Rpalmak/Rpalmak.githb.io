@@ -40,22 +40,27 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
     <div class="container">
         <div class="row g-5">
             <!--header-->
-            <header class="d-flex justify-content-end mb-3 pt-3">
-            <div class="language-switch">
-                <div class="toggle-container">
-                    <img class="flag-icon active" src="/img/spanish.png" alt="Español" />
-                    <img class="flag-icon" src="/img/english.png" alt="English" />
-                    <div class="toggle-circle"></div>
-                    <div class="reflection"></div>
-                </div>
-            </div>
-            </header>
+            <header class="d-flex justify-content-end mb-2 pt-2">
+                <div class="language-switch">
+                    <div class="toggle-container">
+                      <img class="flag-icon active" src="/img/spanish.png" alt="Español" />
+                      <img class="flag-icon" src="/img/english.png" alt="English" />
+                      <input type="checkbox" id="toggle-checkbox" />
+                      <label class="toggle-circle" for="toggle-checkbox"></label>
+                      <div class="reflection"></div>
+                    </div>
+                  </div>
+                  
+                </header>
+
             <!--header-->
             <div class="col-lg-4 sticky-lg-top vh-100 mt-0">
                 <div class="d-flex flex-column h-100 text-center shadow">
@@ -77,19 +82,19 @@
                             href="https://www.facebook.com/rpalmak/"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-secondary btn-square mx-1" target="_blank"
                             href="https://www.instagram.com/rpalmak/"><i class="fab fa-instagram"></i></a>
-                            
+
                     </div>
-                    
-                   
+
+
 
 
                     <div class="d-flex align-items-end justify-content-between border-top">
                         <a href="https://drive.google.com/uc?export=download&id=1zyyqX3nj0wX1InvG74JvKt0V9UaeFmiL"
-                            class="btn w-100 border-end bg-success pb-4 pt-4">Descargar CV</a>
+                            class="btn w-100 border-end bg-success pb-4 pt-4" id="descargarCV">Descargar CV</a>
                     </div>
                 </div>
             </div>
-            
+
 
 
             <div class="col-lg-8 mt-0">
@@ -708,12 +713,16 @@
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
+    <!-- Incluye la biblioteca i18next -->
+    <!-- Incluye la biblioteca i18next -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.5.1/i18next.min.js"></script>
+    <!-- Incluye el archivo de configuración -->
+    <script src="lib/translate/i18n.js"></script>
+    <!-- Incluye tu archivo main.js -->
     <script src="js/main.js"></script>
     <!--carrusel-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 
 </html>

@@ -293,6 +293,7 @@
   opacity: 0;
   z-index: 0;
 }
+
 .reflection {
   position: absolute;
   top: 0;
@@ -303,7 +304,6 @@
   opacity: 0.6;
   z-index: 1;
 }
-
 
 .language-switch.active .flag-icon:first-child {
   z-index: 1;
@@ -322,6 +322,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  cursor: pointer;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
@@ -335,6 +336,7 @@
 .language-switch.active .toggle-circle {
   transform: translateX(34px);
 }
+
 
 
 
