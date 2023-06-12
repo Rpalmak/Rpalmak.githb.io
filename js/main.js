@@ -48,39 +48,44 @@
     });
     
 
-
-    // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+  
+      
+      
+/// Certificados galeria
+$(document).ready(function () {
+    // Filtrar las imágenes al hacer clic en los botones de categoría
+    $('#categoria-filters li').on('click', function () {
+      var categoria = $(this).data('filter');
+      $('.container .certificado-item').hide(); // Ocultar todas las imágenes de certificados
+      $('.container ' + categoria).fadeIn(); // Mostrar las imágenes de la categoría seleccionada
+  
+      // Activar/desactivar la selección de los botones
+      $('#categoria-filters li').removeClass('active');
+      $(this).addClass('active');
     });
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
-
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+  
+    // Activar el primer botón de categoría por defecto
+    $('#categoria-filters li').first().click();
+  });
+  
+  
+  // Portafolio galeria
+  $(document).ready(function () {
+    $('#portfolio-filters li').on('click', function () {
+      var portfolio = $(this).data('filter');
+      $('.container .portfolio-item').hide(); // Ocultar todas las imágenes de portafolio
+      $('.container ' + portfolio).fadeIn(); // Mostrar las imágenes de la categoría seleccionada
+  
+      // Activar/desactivar la selección de los botones
+      $('#portfolio-filters li').removeClass('active');
+      $(this).addClass('active');
     });
+  
+    // Activar el primer botón de categoría por defecto
+    $('#portfolio-filters li').first().click();
+  });
+  
 
-      
-      
-      
-      
-    $(document).ready(function () {
-        // Filtrar las imágenes al hacer clic en los botones de categoría
-        $('#categoria-filters li').on('click', function () {
-          var categoria = $(this).data('filter');
-          $('.container .col-md-4').hide(); // Ocultar todas las imágenes
-          $('.container ' + categoria).fadeIn(); // Mostrar las imágenes de la categoría seleccionada
-      
-          // Activar/desactivar la selección de los botones
-          $('#categoria-filters li').removeClass('active');
-          $(this).addClass('active');
-        });
-      
-        // Activar el primer botón de categoría por defecto
-        $('#categoria-filters li').first().click();
-      });
-      
 
 
 
