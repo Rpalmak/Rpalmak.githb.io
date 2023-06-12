@@ -106,7 +106,7 @@
       toggleCircle.classList.toggle('active');
       changeLanguage();
     }); 
-  
+   
     function changeLanguage() {
       var currentLang = document.documentElement.lang;
       var newLang = currentLang === 'es' ? 'en' : 'es';
