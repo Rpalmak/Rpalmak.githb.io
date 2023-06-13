@@ -419,11 +419,6 @@
   
 }
 
-.skill {
-  background-color: #314355;
-  padding: 10px;
-  border-radius: 5px;
-}
 
 .title {
   font-size: 24px;
@@ -501,3 +496,21 @@
 .zoomable:hover .zoom-icon {
   opacity: 1;
 }
+
+.skill {
+  position: relative;
+  text-align: center;
+  background-color: #314355;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  width: auto;
+}
+
+.skill-image {
+  width: 100px; /* Ajusta el tamaño de ancho según tus necesidades */
+  height: 100px; /* Ajusta el tamaño de altura según tus necesidades */
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
