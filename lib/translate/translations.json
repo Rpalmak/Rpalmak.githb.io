@@ -1,9 +1,35 @@
 {
     "en": {
-      "downloadCV": "Download CV"
+      "downloadCV": "Download CV",
+      "navbar-portafolio": "Portfolio",
+      "aboutMe": "About Me",
+      "skills": "Skills",
+      "experience": "Experience",
+      "education": "Education",
+      "certificates": "Certificates",
+      "mainMe": "Software Engineering degree, with experience in web development, projects and customer service. Motivated to integrate work teams in the achievement of the objectives of the company or organization. Proactive, good interpersonal relationships and discipline in compliance with established standards. I stand out in having a high orientation to the quality of the results, autonomous and collaboration with my peers.",
+      "name": "Name:",
+      "jobTitle": "Job Title: ",
+      "jobTitle2": "Software Engineer",
+      "workExperience": "Experience: ",
+      "workExperienceTime": "2 Years",
+      "phoneNumber": "Phone Number: "
     },
     "es": {
-      "downloadCV": "Descargar CV"
+      "downloadCV": "Descargar CV",
+      "navbar-portafolio": "Portafolio",
+      "aboutMe": "Acerca de mí",
+      "skills": "Habilidades",
+      "experience": "Experiencia",
+      "education": "Formación",
+      "certificates": "Certificados",
+      "mainMe": "Titulado de Ingeniería en Informática, con experiencia en desarrollo web, proyectos y atención a clientes. Motivado para integrar equipos de trabajo en la consecución de los objetivos de la empresa u organización. Proactivo, buenas relaciones interpersonales y disciplina en el cumplimiento de las normas establecidas. Me destaco en tener una alta orientación a la calidad de los resultados, autónomo y colaboración con mis pares.",
+      "name": "Nombre:",
+      "jobTitle": "Título: ",
+      "jobTitle2": "Ingeniero en Informática",
+      "workExperience": "Experiencia: ",
+      "workExperienceTime": "2 Años",
+      "phoneNumber": "Teléfono: "
     }
   }
   
