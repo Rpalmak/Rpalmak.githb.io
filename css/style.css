@@ -459,7 +459,7 @@
 
 .zoomable {
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /* Puedes intentar eliminar esta línea o modificarla */
   transition: transform 0.3s;
 }
 
@@ -496,6 +496,7 @@
 .zoomable:hover .zoom-icon {
   opacity: 1;
 }
+
 
 .skill {
   position: relative;
