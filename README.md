@@ -8,5 +8,5 @@
 
 ## 📋 Proyectos Forkeados
 
-- Drojasva.github.io
-- PortFolioLShaggyo
+<a href="https://github.com/Rpalmak/Drojasva.github.io">https://github.com/Rpalmak/Drojasva.github.io</a>
+<a href="https://github.com/Rpalmak/PortFolioLShaggyo">https://github.com/Rpalmak/PortFolioLShaggyo</a>
