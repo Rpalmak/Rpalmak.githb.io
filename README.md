@@ -6,7 +6,9 @@
 
 <br>
 
+---
+
 ## 📋 Proyectos Forkeados
 
-<a href="https://github.com/Rpalmak/Drojasva.github.io">https://github.com/Rpalmak/Drojasva.github.io</a>
-<a href="https://github.com/Rpalmak/PortFolioLShaggyo">https://github.com/Rpalmak/PortFolioLShaggyo</a>
+- [Drojasva.github.io](https://github.com/Rpalmak/Drojasva.github.io)
+- [PortFolioLShaggyo](https://github.com/Rpalmak/PortFolioLShaggyo)
