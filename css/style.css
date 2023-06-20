@@ -363,7 +363,7 @@
   position: relative;
   text-align: center;
   background-color: #314355;
-  padding: 10px;
+  gap: 10px;
   border-radius: 5px;
   display: inline-block;
   width: auto;
