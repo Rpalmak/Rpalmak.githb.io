@@ -374,3 +374,47 @@
   margin-bottom: 10px;
   object-fit: cover;
 }
+
+
+
+.btn-espanol:hover {
+  background-image: linear-gradient(to top, var(--secondary), var(--primary));
+  filter: brightness(110%);
+}
+
+.btn-english:hover {
+  background-image: linear-gradient(to top, var(--secondary), var(--primary));
+  filter: brightness(110%);
+}
+
+.descargas img
+{
+  width: 100px;
+  height: 100px;
+}
+.border-bottom {
+  padding-bottom: 10px; 
+}
+
+.descargar-cv {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Helvetica", sans-serif; /* Cambia "Arial" por la fuente deseada */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
