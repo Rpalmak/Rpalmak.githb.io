@@ -250,9 +250,9 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: #4f5d6b;
     padding: 10px;
-    display: none;
+    display: inline;
   }
   .navbar-toggler {
     display: block;
