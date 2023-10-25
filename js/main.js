@@ -200,6 +200,11 @@ let skills = [
     titulo: "Javascript"
   },
   {
+    imagen: "img/skills-icons/react.svg",
+    alt: "Imagen de React",
+    titulo: "React"
+  },
+  {
     imagen: "img/skills-icons/github.png",
     alt: "Imagen de Github",
     titulo: "Git/Github"
@@ -247,6 +252,16 @@ const certificados = [
     categoria: "categoria1",
     imagen: "img/certificados/university-of-london-introduction.png",
     alt: "Certificado de curso de University of London"
+  },
+  {
+    categoria: "categoria1",
+    imagen: "img/certificados/CertificadoDeFinalizacion_React esencial-1.png",
+    alt: "Certificado de curso de React 2023 por Linkedin"
+  },
+  {
+    categoria: "categoria1",
+    imagen: "img/certificados/CertificadoDeFinalizacion_React esencial 2019-1.png",
+    alt: "Certificado de curso de react de 2019 por Linkedin"
   },
   {
     categoria: "categoria1",
