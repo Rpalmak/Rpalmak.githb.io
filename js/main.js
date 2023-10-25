@@ -353,9 +353,6 @@ for (let i = 0; i < certificados.length; i++) {
     <div class='col-md-4 certificado-item ${certificado.categoria} mb-4'>
       <a href='${certificado.imagen}' data-lightbox='certificado-${certificado.categoria}' title='Haz clic para agrandar'>
         <img class='img-fluid zoomable' src='${certificado.imagen}' alt='${certificado.alt}' />
-        <div class='zoom-overlay'>
-          <i class='fas fa-search-plus'></i>
-        </div>
       </a>
     </div>
   `;

@@ -280,7 +280,21 @@
     transform: rotate(180deg);
   }
 }
+
+.descargas img
+{
+  width: 130px;
+  height: 100px;
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
+
+  .descargas img
+  {
+    width: 100px;
+    height: 80px;
+  } 
+
   .navbar {
     font-size: 14px;
   }
@@ -296,6 +310,7 @@
     margin: -5px;
   }
 }
+
 .title {
   font-size: 24px;
   font-weight: 700;
@@ -387,11 +402,7 @@
   filter: brightness(110%);
 }
 
-.descargas img
-{
-  width: 130px;
-  height: 100px;
-}
+
 .border-bottom {
   padding-bottom: 10px; 
 }
