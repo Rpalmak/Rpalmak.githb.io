@@ -342,6 +342,11 @@ const certificados = [
     categoria: "categoria4",
     imagen: "img/certificados/desafiolatam3.png",
     alt: "Certificado de Javascript para la Web por Desafio Latam"
+  },
+  {
+    categoria: "categoria4",
+    imagen: "img/certificados/desafiolatam4.png",
+    alt: "Certificado de React I por Desafio Latam"
   }
 ];
 
