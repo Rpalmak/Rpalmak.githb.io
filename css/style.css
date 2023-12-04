@@ -287,6 +287,11 @@
   height: 100px;
 }
 
+.dropdown-item {
+  cursor: pointer;
+}
+
+
 .pdf-thumbnail {
   width: 100%; /* Ajusta el ancho según tus necesidades */
   height: 300px; /* Ajusta la altura según tus necesidades */
