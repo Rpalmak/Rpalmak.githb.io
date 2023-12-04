@@ -167,6 +167,11 @@ function cargarSkills() {
     .catch((error) => console.error("Error al cargar skills:", error));
 }
 
+function toggleSubcategories() {
+  const subcategories = document.getElementById('react-subcategories');
+  subcategories.style.display = (subcategories.style.display === 'none') ? 'block' : 'none';
+}
+
 // Función para cargar y trabajar con el archivo JSON de trabajos
 function cargarTrabajos() {
   fetch("../data/trabajos.json")
@@ -177,7 +182,7 @@ function cargarTrabajos() {
 
       trabajos.forEach((trabajo) => {
         const nuevoHTML = `
-          <div class='col-md-4 portfolio-item ${trabajo.category}'>
+          <div class='col-md-4 portfolio-item ${trabajo.category} ${trabajo.subcategory ? 'subcategory' : ''}'>
             <a href='${trabajo.pdf ? trabajo.pdf : trabajo.image}' data-lightbox='${trabajo.category}' title='Haz clic para agrandar' class='portafolio-item'>
               ${
                 trabajo.pdf
@@ -195,6 +200,7 @@ function cargarTrabajos() {
     })
     .catch((error) => console.error("Error al cargar trabajos:", error));
 }
+
 
 
 
@@ -222,6 +228,9 @@ function filtrarTrabajos(categoria) {
 
 
 
+
+
+
 function filtrarCertificados(categoria) {
   const items = document.querySelectorAll(".certificado-item");
   items.forEach((item) => {
@@ -232,7 +241,7 @@ function filtrarCertificados(categoria) {
   });
 
   // Agregar la clase 'active' al botón presionado y quitarla de los demás
-  const buttons = document.querySelectorAll("#portfolio-filters li");
+  const buttons = document.querySelectorAll("#categoria-filters li");
   buttons.forEach((button) => {
     if (button.dataset.filter === `.${categoria}`) {
       button.classList.add("active");
@@ -241,7 +250,6 @@ function filtrarCertificados(categoria) {
     }
   });
 }
-
 
 
 
