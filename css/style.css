@@ -287,6 +287,19 @@
   height: 100px;
 }
 
+.pdf-thumbnail {
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  border: 1px solid #ccc; /* Añade un borde opcional */
+}
+
+.pdf-thumbnail iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Elimina el borde del iframe */
+}
+
+
 @media (min-width: 992px) and (max-width: 1200px) {
 
   .descargas img

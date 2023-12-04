@@ -215,10 +215,9 @@
                 <section class="py-5 border-bottom wow fadeInUp" id="skills-section" data-wow-delay="0.1s">
                     <h1 class="title pb-3 mb-5" data-translate="skills">Habilidades</h1>
                     <div class="row d-flex gap-3 flex-wrap justify-content-center" id="skillsStack">
-                        <!-- Aqui van los certificados -->
+                        <!-- Aqui van los skills -->
                     </div>
                 </section>
-
                 <!-- Skills End -->
 
                 <!-- Expericence Start -->
@@ -353,23 +352,24 @@
                     </h1>
                     <div class="row">
                         <div class="col-12 text-center mb-2">
-                            <ul class="list-inline mb-4" id="categoria-filters">
-                                <li class="btn btn-secondary active" data-filter=".categoria1"
-                                    data-translate="academies">
-                                    Academias
-                                </li>
-                                <li class="btn btn-secondary" data-filter=".categoria2" data-translate="university">
-                                    Universidad
-                                </li>
-                                <li class="btn btn-secondary" data-filter=".categoria4" data-translate="Bootcamp">
-                                    Bootcamp
-                                </li>
-                                <li class="btn btn-secondary" data-filter=".categoria3" data-translate="others">
-                                    otros
-                                </li>
-                            </ul>
+                          <ul class="list-inline mb-4" id="categoria-filters">
+                            <li class="btn btn-secondary active" onclick="filtrarCertificados('categoria1')" data-filter=".categoria1" data-translate="academies">
+                              Academias
+                            </li>
+                            <li class="btn btn-secondary" onclick="filtrarCertificados('categoria2')" data-filter=".categoria2" data-translate="university">
+                              Universidad
+                            </li>
+                            <li class="btn btn-secondary" onclick="filtrarCertificados('categoria4')" data-filter=".categoria4" data-translate="Bootcamp">
+                              Bootcamp
+                            </li>
+                            <li class="btn btn-secondary" onclick="filtrarCertificados('categoria3')" data-filter=".categoria3" data-translate="others">
+                              Otros
+                            </li>
+                          </ul>
                         </div>
-                    </div>
+                      </div>
+                      
+                      
                     <div class="container">
                         <div class="row" id="certificadosContainer">
                            
@@ -384,6 +384,7 @@
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
                 <!-- Portfolio Start -->
+                
                 <section class="py-5 border-bottom" id="portfolio-section">
                     <h1 class="title pb-3 mb-5" data-translate="navbar-portafolio">
                         Portafolio
@@ -391,159 +392,29 @@
                     <div class="row">
                         <div class="col-12 text-center mb-2">
                             <ul class="list-inline mb-4" id="portfolio-filters">
-                                <li class="btn btn-secondary active" data-translate="proyect1" data-filter=".first">
-                                    Contador Virtual
+                                <li class="btn btn-secondary active" onclick="filtrarTrabajos('first')" data-filter=".first" data-translate="personalproyects">
+                                    Proyectos Personales
                                 </li>
-                                <li class="btn btn-secondary" data-filter=".second">
-                                    General
-                                </li>
-                                <li class="btn btn-secondary" data-filter=".third">
+                                <li class="btn btn-secondary" onclick="filtrarTrabajos('second')" data-filter=".second">
                                     Wordpress
                                 </li>
-                                <li class="btn btn-secondary" data-translate="proyect2" data-filter=".fourth">
-                                    Planificador de comidas
-                                </li>
-                                <li class="btn btn-secondary" data-translate="proyect3" data-filter=".fifth">
+                                <li class="btn btn-secondary" onclick="filtrarTrabajos('third')" data-filter=".third" data-translate="thesis">
                                     Tesis
                                 </li>
-                                <li class="btn btn-secondary" data-translate="proyect4" data-filter=".six">
-                                    Para Clientes
+                                <li class="btn btn-secondary" onclick="filtrarTrabajos('fourth')" data-filter=".fourth">
+                                    Freelancer
+                                </li>
+                                <li class="btn btn-secondary" onclick="filtrarTrabajos('fifth')" data-filter=".fifth">
+                                    React
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="container ">
-                        <!--Contador virtual 1-->
-                        <div class="row ">
-                            <div class="col-md-4 portfolio-item first mb-4">
-                                <a href="img/portafolio/contador-virtual_egresos.php.png" data-lightbox="first"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/contador-virtual_egresos.php.png"
-                                        alt="Imagen de sistema web de egresos de contador virtual" />
-                                </a>
-                            </div>
-                            <!--Contador virtual 2-->
-                            <div class="col-md-4 portfolio-item first mb-4">
-                                <a href="img/portafolio/contador-virtual_ingresos.php.png" data-lightbox="first"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/contador-virtual_ingresos.php.png"
-                                        alt="Imagen de sistema web de ingresos de contador virtual" />
-                                </a>
-                            </div>
-                        </div>
-                        <!--General-->
-                        <div class="row">
-                            <div class="col-md-4 portfolio-item second mb-4">
-                                <a href="img/portafolio/ipsenjohnsen.png" data-lightbox="second"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable" src="img/portafolio/ipsenjohnsen.png"
-                                        alt="Imagen de sitio web para abogada" />
-                                </a>
-                            </div>
-                        </div>
-                        <!--Wordpress-->
-                        <div class="row">
-                            <div class="col-md-4 portfolio-item third mb-4">
-                                <a href="img/portafolio/thornpixelshop.com.png" data-lightbox="third"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable" src="img/portafolio/thornpixelshop.com.png"
-                                        alt="Imagen de sitio web Wordpress para venta de productos digitales" />
-                                </a>
-                            </div>
-                        </div>
-                        <!--Planificador de comidas-->
-                        <div class="row">
-                            <div class="col-md-4 portfolio-item fourth mb-4">
-                                <a href="img/portafolio/planificador-de-comidas-mesa.png" data-lightbox="fourth"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/planificador-de-comidas-mesa.png"
-                                        alt="Imagen de seccion mesa de sistema web Planificador de comidas" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 portfolio-item fourth mb-4">
-                                <a href="img/portafolio/planificador-de-comidas-plan.png" data-lightbox="fourth"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/planificador-de-comidas-plan.png"
-                                        alt="Imagen de seccion plan de sistema web Planificador de comidas" />
-                                </a>
-                            </div>
-                        </div>
-                        <!--Tesis-->
-                        <div class="row">
-                            <div class="col-md-4 portfolio-item fifth mb-4">
-                                <a href="img/portafolio/Tesis-categorias.png" data-lightbox="fifth"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-categorias.png"
-                                        alt="Imagen de proyecto de Tesis ERP: Categorias" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 portfolio-item fifth mb-4">
-                                <a href="img/portafolio/Tesis-compras.png" data-lightbox="fifth"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-compras.png"
-                                        alt="Imagen de proyecto de Tesis ERP: Compras" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 portfolio-item fifth mb-4">
-                                <a href="img/portafolio/Tesis-info.png" data-lightbox="fifth"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-info.png"
-                                        alt="Imagen de proyecto de Tesis ERP: Panel" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 portfolio-item fifth mb-4">
-                                <a href="img/portafolio/Tesis-sesiones.png" data-lightbox="fifth"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-sesiones.png"
-                                        alt="Imagen de proyecto de Tesis ERP: Sesiones de usuario" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 portfolio-item fifth mb-4">
-                                <a href="img/portafolio/Tesis-stock.png" data-lightbox="fifth"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable" src="img/portafolio/Tesis-stock.png"
-                                        alt="Imagen de proyecto de Tesis ERP: Stock" />
-                                </a>
-                            </div>
-                        </div>
-                        <!--Profesionales-->
-                        <div class="row d-flex flex-wrap">
-                            <div class="col-md-4 portfolio-item six mb-4">
-                                <a href="img/portafolio/profesional/reciclajemundosur.cl_about.png" data-lightbox="six"
-                                    title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/profesional/reciclajemundosur.cl_about.png"
-                                        alt="Imagen de sitio web para empresa reciclaje mundo sur" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 portfolio-item six mb-4">
-                                <a href="img/portafolio/profesional/reciclajemundosur.cl_Clientes.png"
-                                    data-lightbox="six" title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/profesional/reciclajemundosur.cl_Clientes.png"
-                                        alt="Imagen de sitio web para empresa reciclaje mundo sur" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 portfolio-item six mb-4">
-                                <a href="img/portafolio/profesional/reciclajemundosur.cl_Portfolio.png"
-                                    data-lightbox="six" title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/profesional/reciclajemundosur.cl_Portfolio.png"
-                                        alt="Imagen de sitio web para empresa reciclaje mundo sur" />
-                                </a>
-                            </div>
-                            <div class="col-md-4 portfolio-item six mb-4">
-                                <a href="img/portafolio/profesional/logisticayrepresentacioninternacional.com.png"
-                                    data-lightbox="six" title="Haz clic para agrandar" class="portafolio-item">
-                                    <img class="d-block w-100 zoomable"
-                                        src="img/portafolio/profesional/logisticayrepresentacioninternacional.com.png"
-                                        alt="Imagen de sitio web para empresa de representación de transportes y logística" />
-                                </a>
-                            </div>
+                    
+                    
+                    <div class="container">
+                        <div class="row" id="trabajosContainer">
+                           
                         </div>
                     </div>
                 </section>
@@ -553,10 +424,10 @@
                 <section class="wow fadeIn" data-wow-delay="0.1s">
                     <div class="bg-secondary text-light text-center p-5">
                         <div class="d-flex justify-content-center mb-4">
-                            <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" target="_blank" href="https://github.com/Rpalmak"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" target="_blank" href="https://www.linkedin.com/in/raul-pk/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" target="_blank" href="https://www.facebook.com/rpalmak/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" target="_blank" href="https://www.instagram.com/rpalmak/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </section>
@@ -583,9 +454,10 @@
     <!-- Template Javascript -->
 
     <!-- Incluye tu archivo main.js -->
-    <script src="js/main.js"></script>
+    
     <!--carrusel-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

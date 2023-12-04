@@ -45,7 +45,9 @@
       "proyect1":"Virtual Accountant",
       "proyect2":"Meal Planner",
       "proyect3":"Thesis",
-      "proyect4":"For Clients"
+      "proyect4":"For Clients",
+      "thesis":"Thesis",
+      "personalproyects":"Personal Proyects"
     },
     "es": {
       "downloadCV": "Descargar CV",
@@ -93,7 +95,9 @@
       "proyect1":"Contador Virtual",
       "proyect2":"Planificador de comidas",
       "proyect3":"Tesis",
-      "proyect4":"Para Clientes"
+      "proyect4":"Para Clientes",
+      "thesis":"Tesis",
+      "personalproyects":"Proyectos Personales"
     }
   }
   
