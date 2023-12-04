@@ -77,7 +77,17 @@
       },
       {
         "category": "react1",
-        "image": "img/portafolio/React/React_PizzaShop.png",
+        "image": "img/portafolio/React/pizza-shop/pizzashop-main.png",
+        "title": "Proyecto de React de Pizzeria - vista general de todas las pizzas"
+      },
+      {
+        "category": "react1",
+        "image": "img/portafolio/React/pizza-shop/pizzashop-details.png",
+        "title": "Proyecto de React de Pizzeria con carrito de productos"
+      },
+      {
+        "category": "react1",
+        "image": "img/portafolio/React/pizza-shop/pizzashop-cart.png",
         "title": "Proyecto de React de Pizzeria con carrito de productos"
       }
     ]
